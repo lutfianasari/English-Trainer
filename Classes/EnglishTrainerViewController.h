@@ -16,22 +16,109 @@
 	IBOutlet UIView *menu_view;
 	IBOutlet UIView *profile_view;
 	IBOutlet UIView *search_view;
-	IBOutlet UIView *bookmarklist_view;
+	IBOutlet UIView *bmlist_view;
 	IBOutlet UIView *history_view;
 	IBOutlet UIView *help_view;
 	IBOutlet UIView *resultdetail_view;
+	IBOutlet UIView *editprofile_view;
 	
-	//IBOutlet for Login
+	//IB for Login
+	IBOutlet UITextField *id_log_text;
+	IBOutlet UITextField *pw_log_text;
+	IBOutlet UIButton *ok_log_button;
+	IBOutlet UIButton *reg_button;
 	
-	//IBAction for Login
+	//IB for Register
+	IBOutlet UITextField *id_reg_text; //do we really need this??
+	IBOutlet UITextField *pw_reg_text; //do we really need this??
+	IBOutlet UITextField *toeic_text;
+	IBOutlet UIButton *ok_reg_button;
 	
-	//IBOutlet for Register
+	//IB for Menu
+	IBOutlet UIButton *profile_button;
+	IBOutlet UIButton *search_button;
+	IBOutlet UIButton *bmlist_button;
+	IBOutlet UIButton *history_button;
+	IBOutlet UIButton *menu_help_view;
+	IBOutlet UIButton *logout_button;
 	
-	//IBAction for Register
+	//IB for Profile
+	//**** don't know how to show data from database
+	IBOutlet UILabel *show_id_label;
+	IBOutlet UILabel *show_pw_label;
+	IBOutlet UILabel *show_toeic_label;
+	IBOutlet UILabel *show_occup_label;
+	IBOutlet UILabel *show_hobby_label;
+	IBOutlet UIButton *edit_button;
+	IBOutlet UIButton *profile_back_button;
 	
-	//...
+	//IB for Editprofile
+	//**** don't know how to show data drom database
+	IBOutlet UITextField *edit_userid_text;  //might be useless since it use id from fb/twitter
+	IBOutlet UITextField *edit_pw_text;  //might be useless since it use id from fb/twitter
+	IBOutlet UITextField *edit_toeic_text; //do we really need this??
+	IBOutlet UITextField *edit_occup_text; //do we really need this??
+	IBOutlet UITextField *edit_hobby_text; //do we really need this??
+	IBOutlet UIButton *saveprofile_button_tapped;
+	
+	//IB for Search
+	//**** don't know how to show data from database
+	IBOutlet UIButton *search_back_button;
+	
+	//IB for Bookmark List
+	//**** don't know how to show data from database
+	
+	IBOutlet UIButton *bmlist_back_button;
+	
+	//IB for History
+	//**** don't know how to show data from database
+	IBOutlet UIButton *history_back_button;
+	
+	//IB for Help
+	//**** don't know how to show data in scroll page
+	IBOutlet UIButton *help_back_button;
+	IBOutlet UITextView *help_text;
+	
+	//IB for Result Detail
+	//**** don't know how to show data from database
+	IBOutlet UIButton *bmlist_add_button;
+	IBOutlet UIButton *resultdetail_back_button;
+	
+	NSString *String;
 
 }
+
+- (void)ok_login_button_tapped:(id)sender;
+- (void)reg_button_tapped:(id)sender;
+- (void)ok_reg_button_tapped:(id)sender;
+- (void)logout_button_tapped:(id)sender;
+- (void)toprofile_button_tapped:(id)sender;
+- (void)tosearch_button_tapepd:(id)sender;
+- (void)tobmlist_button_tapped:(id)sender;
+- (void)tohistory_button_tapped:(id)sender;
+- (void)tohelp_button_tapped:(id)sender;
+- (void)fromprofile_button_tapped:(id)sender; //back from profile to menu page
+- (void)fromsearch_button_tapped:(id)sender;
+- (void)frombmlist_button_tapped:(id)sender;
+- (void)fromhistory_button_tapped:(id)sender;
+- (void)fromhelp_button_tapped:(id)sender;
+- (void)fromresultdetail_button_tapped:(id)sender;
+- (void)saveprofile_button_tapped:(id)sender;
+- (void)editprofile_button_tapped:(id)sender;
+
+- (void) touchesBegan :(NSSet *) touches withEvent:(UIEvent *)event;
+
+
+//below are how to get and post data from and to UI
+- (IBAction)profile_view;
+
+- (IBAction)get_logindata;
+- (IBAction)get_regdata;
+
+- (void)searchTableView_bmlist;
+//- (void)doneSearching_bmlist_tapped:(id)sender;
+
+ 
 
 @end
 

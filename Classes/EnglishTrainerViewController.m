@@ -29,7 +29,6 @@
 }
 */
 
-
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -59,7 +58,123 @@
 }
 
 
+- (void)ok_login_button_tapped:(id)sender;
+{
+	//NSLog(id_log_text.text);
+	self.view = menu_view;
+}
+
+- (void)reg_button_tapped:(id)sender;
+{
+	//NSLog(0);
+	self.view = register_view;
+}
+
+- (void)ok_reg_button_tapped:(id)sender;
+{
+	//NSLog(id_reg_text.text);
+	self.view = login_view;
+}
+
+- (void)logout_button_tapped:(id)sender;
+{
+	//NSLog(0);
+	self.view = login_view;
+}
+
+- (void)toprofile_button_tapped:(id)sender;
+{
+	self.view = profile_view;
+	
+}
+
+- (void)tosearch_button_tapepd:(id)sender;
+{
+	self.view = search_view;
+}
+
+- (void)tobmlist_button_tapped:(id)sender;
+{
+	self.view = bmlist_view;
+}
+
+- (void)tohistory_button_tapped:(id)sender;
+{
+	self.view = history_view;
+}
+
+- (void)tohelp_button_tapped:(id)sender;
+{
+	self.view = help_view;
+}
+
+- (void)fromprofile_button_tapped:(id)sender; //back from profile to menu page
+{
+	self.view = menu_view;
+}
+
+- (void)fromsearch_button_tapped:(id)sender; //back from search to menu page
+{
+	self.view = menu_view;
+}
+
+- (void)frombmlist_button_tapped:(id)sender; //back from bmlist to menu page
+{
+	self.view = menu_view;
+}
+
+- (void)fromhistory_button_tapped:(id)sender; //back from history to menu page
+{
+	self.view = menu_view;
+}
+
+- (void)fromhelp_button_tapped:(id)sender; //back from 1 to menu page
+{
+	self.view = menu_view;
+}
+
+- (void)fromresultdetail_button_tapped:(id)sender;//back from resultdetail page
+{
+	self.view = menu_view;
+}
+
+- (void)editprofile_button_tapped:(id)sender;
+{
+	self.view = editprofile_view;
+}
+
+- (void)saveprofile_button_tapped:(id)sender;
+{
+	self.view = profile_view;
+}
+
+-(void) touchesBegan :(NSSet *) touches withEvent:(UIEvent *)event
+{
+	[edit_userid_text resignFirstResponder];
+	[edit_pw_text resignFirstResponder];
+	[edit_toeic_text resignFirstResponder];
+	[edit_occup_text resignFirstResponder];
+	[edit_hobby_text resignFirstResponder];
+	[id_log_text resignFirstResponder];
+	[pw_log_text resignFirstResponder];
+	[super touchesBegan:touches withEvent:event ];
+}
+
+- (IBAction)profile_view;
+{
+	show_id_label.text = [NSString stringWithFormat:@"%@", [edit_userid_text text]];
+	show_pw_label.text = [NSString stringWithFormat:@"%@", [edit_pw_text text]];
+	show_toeic_label.text = [NSString stringWithFormat:@"%@", [edit_toeic_text text]];
+	show_occup_label.text = [NSString stringWithFormat:@"%@", [edit_occup_text text]];
+	show_hobby_label.text = [NSString stringWithFormat:@"%@", [edit_hobby_text text]];
+}
+
+
 - (void)dealloc {
+	[id_log_text release];
+	[pw_log_text release];
+	[String release];
+	
     [super dealloc];
 }
 
