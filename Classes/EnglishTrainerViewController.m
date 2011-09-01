@@ -33,9 +33,19 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	saved_bmlist = [[NSMutableArray alloc] init];
+	//Add saved_bmlist (exampe)
+	[saved_bmlist addObject:@"Apple is red"];
+	[saved_bmlist addObject:@"Ball is blue"];
+	[saved_bmlist addObject:@"Apple is not red"];
+	[saved_bmlist addObject:@"Ball is not blue"];
+	[saved_bmlist addObject:@"Happy in any colour"];
+	
+	self.navigationItem.title = @"English_sentence";
 }
-*/
 
+*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -169,12 +179,31 @@
 	show_hobby_label.text = [NSString stringWithFormat:@"%@", [edit_hobby_text text]];
 }
 
+/*
+
+- (NSInteger)bmlist_tableView:(UITableView *)bmlist_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *CellIdentifier = @"Cell";
+	
+	UITableViewCell *cell = [bmlist_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell==nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+	}
+	
+	//Set up the cell
+	NSString *cellValue = [saved_bmlist objectAtIndex:indexPath.row];
+	cell.text = cellValue;
+	
+	return cell;
+}*/
 
 - (void)dealloc {
 	[id_log_text release];
 	[pw_log_text release];
 	[String release];
 	
+	//[saved_bmlist release];
+
     [super dealloc];
 }
 

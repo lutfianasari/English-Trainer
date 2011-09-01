@@ -67,7 +67,8 @@
 	
 	//IB for Bookmark List
 	//**** don't know how to show data from database
-	
+	//NSMutableArray *saved_bmlist;
+	IBOutlet UITableView *bmlist_tableView;
 	IBOutlet UIButton *bmlist_back_button;
 	
 	//IB for History
@@ -115,7 +116,7 @@
 - (IBAction)get_logindata;
 - (IBAction)get_regdata;
 
-- (void)searchTableView_bmlist;
+//- (void)searchTableView_bmlist;
 //- (void)doneSearching_bmlist_tapped:(id)sender;
 
  
