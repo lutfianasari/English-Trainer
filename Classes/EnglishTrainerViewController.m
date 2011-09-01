@@ -9,6 +9,8 @@
 #import "EnglishTrainerViewController.h"
 
 @implementation EnglishTrainerViewController
+@synthesize saved_bmlist;
+@synthesize historylist;
 
 
 
@@ -29,23 +31,22 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	saved_bmlist = [[NSMutableArray alloc] init];
-	//Add saved_bmlist (exampe)
-	[saved_bmlist addObject:@"Apple is red"];
-	[saved_bmlist addObject:@"Ball is blue"];
-	[saved_bmlist addObject:@"Apple is not red"];
-	[saved_bmlist addObject:@"Ball is not blue"];
-	[saved_bmlist addObject:@"Happy in any colour"];
+	NSArray *array_bmlist = [[NSArray alloc] initWithObjects:@"ipod", @"iphone", nil];
+	self.saved_bmlist = array_bmlist;
 	
-	self.navigationItem.title = @"English_sentence";
+	NSArray *array_histlist = [[NSArray alloc] initWithObjects:@"ipod", @"iphone", @"ipad", nil];
+	self.historylist = array_histlist;
+	
+	[array_bmlist release];
+	[array_histlist release];
 }
 
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -179,30 +180,34 @@
 	show_hobby_label.text = [NSString stringWithFormat:@"%@", [edit_hobby_text text]];
 }
 
-/*
-
-- (NSInteger)bmlist_tableView:(UITableView *)bmlist_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)tableView:(UITableView *)tableView
+numberOfRowsInSection:(NSInteger)section
 {
-	static NSString *CellIdentifier = @"Cell";
-	
-	UITableViewCell *cell = [bmlist_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (cell==nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+	return [self.saved_bmlist count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier] autorelease];
 	}
 	
-	//Set up the cell
-	NSString *cellValue = [saved_bmlist objectAtIndex:indexPath.row];
-	cell.text = cellValue;
-	
+	NSUInteger row = [indexPath row];
+	cell.textLabel.text = [saved_bmlist objectAtIndex:row];
 	return cell;
-}*/
+}
+
 
 - (void)dealloc {
 	[id_log_text release];
 	[pw_log_text release];
 	[String release];
 	
-	//[saved_bmlist release];
+	[saved_bmlist dealloc];
+	[historylist dealloc];
 
     [super dealloc];
 }

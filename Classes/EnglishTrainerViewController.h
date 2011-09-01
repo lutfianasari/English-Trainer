@@ -67,12 +67,14 @@
 	
 	//IB for Bookmark List
 	//**** don't know how to show data from database
-	//NSMutableArray *saved_bmlist;
 	IBOutlet UITableView *bmlist_tableView;
+	NSArray *saved_bmlist;
 	IBOutlet UIButton *bmlist_back_button;
 	
 	//IB for History
 	//**** don't know how to show data from database
+	IBOutlet UITableView *history_tableView;
+	NSArray *historylist;
 	IBOutlet UIButton *history_back_button;
 	
 	//IB for Help
@@ -84,6 +86,7 @@
 	//**** don't know how to show data from database
 	IBOutlet UIButton *bmlist_add_button;
 	IBOutlet UIButton *resultdetail_back_button;
+	
 	
 	NSString *String;
 
@@ -113,11 +116,13 @@
 //below are how to get and post data from and to UI
 - (IBAction)profile_view;
 
+@property (nonatomic, retain) NSArray *saved_bmlist;
+@property (nonatomic, retain) NSArray *historylist;
+
 - (IBAction)get_logindata;
 - (IBAction)get_regdata;
 
-//- (void)searchTableView_bmlist;
-//- (void)doneSearching_bmlist_tapped:(id)sender;
+
 
  
 
