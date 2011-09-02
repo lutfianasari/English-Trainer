@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Saved_bmlistViewController.h"
-#import "HistoryTableViewController.h"
 
 @interface EnglishTrainerViewController : UIViewController {
 	
@@ -69,13 +67,11 @@
 	
 	//IB for Bookmark List
 	//**** don't know how to show data from database
-	Saved_bmlistViewController *saved_bmlistController;
 	IBOutlet UITableView *bmlist_tableView;
 	IBOutlet UIButton *bmlist_back_button;
 	
 	//IB for History
 	//**** don't know how to show data from database
-	HistoryTableViewController *historytableController;
 	IBOutlet UITableView *history_tableView;
 	IBOutlet UIButton *history_back_button;
 	

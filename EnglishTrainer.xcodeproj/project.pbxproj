@@ -149,7 +149,6 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* EnglishTrainer_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				D68353311410ED3B00A3B0C6 /* SentenceViewController.xib */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D68353311410ED3B00A3B0C6 /* SentenceViewController.xib */,
 				D683530E1410EC7300A3B0C6 /* LoginViewController.xib */,
 				D68353131410EC8100A3B0C6 /* RegisterViewController.xib */,
 				D68353181410EC9600A3B0C6 /* SearchViewController.xib */,
