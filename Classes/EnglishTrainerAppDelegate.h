@@ -12,11 +12,11 @@
 
 @interface EnglishTrainerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    EnglishTrainerViewController *viewController;
+	UITabBarController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet EnglishTrainerViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *viewController;
 
 @end
 

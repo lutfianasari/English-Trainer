@@ -37,21 +37,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	if (historytableController == nil) {
-		historytableController = [[HistoryTableViewController alloc] init];
-	}
-	if (saved_bmlistController == nil) {
-		saved_bmlistController = [[Saved_bmlistViewController alloc] init];
-	}
+	//if (historytableController == nil) {
+	//	historytableController = [[HistoryTableViewController alloc] init];
+	//}
+	//if (saved_bmlistController == nil) {
+	//	saved_bmlistController = [[Saved_bmlistViewController alloc] init];
+	//}
 	
-	[history_tableView setDataSource:historytableController];
-	[bmlist_tableView setDataSource:saved_bmlistController];
+	//[history_tableView setDataSource:historytableController];
+	//[bmlist_tableView setDataSource:saved_bmlistController];
 
-	[history_tableView setDelegate:historytableController];
-	[bmlist_tableView setDelegate:saved_bmlistController];
+	//[history_tableView setDelegate:historytableController];
+	//[bmlist_tableView setDelegate:saved_bmlistController];
 	
-	historytableController.view = historytableController.tableView;
-	saved_bmlistController.view = saved_bmlistController.tableView;
+	//historytableController.view = historytableController.tableView;
+	//saved_bmlistController.view = saved_bmlistController.tableView;
 
 }
 
@@ -194,8 +194,8 @@
 	[id_log_text release];
 	[pw_log_text release];
 	
-	[saved_bmlistController release];
-	[historytableController release];
+	//[saved_bmlistController release];
+	//[historytableController release];
 
     [super dealloc];
 }
