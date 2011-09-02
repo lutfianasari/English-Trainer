@@ -7,10 +7,11 @@
 //
 
 #import "EnglishTrainerViewController.h"
+//#import "Saved_bmlistViewController.h"
+//#import "HistoryTableViewController.h"
 
 @implementation EnglishTrainerViewController
-@synthesize saved_bmlist;
-@synthesize historylist;
+
 
 
 
@@ -36,14 +37,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	NSArray *array_bmlist = [[NSArray alloc] initWithObjects:@"ipod", @"iphone", nil];
-	self.saved_bmlist = array_bmlist;
+	if (historytableController == nil) {
+		historytableController = [[HistoryTableViewController alloc] init];
+	}
+	if (saved_bmlistController == nil) {
+		saved_bmlistController = [[Saved_bmlistViewController alloc] init];
+	}
 	
-	NSArray *array_histlist = [[NSArray alloc] initWithObjects:@"ipod", @"iphone", @"ipad", nil];
-	self.historylist = array_histlist;
+	[history_tableView setDataSource:historytableController];
+	[bmlist_tableView setDataSource:saved_bmlistController];
+
+	[history_tableView setDelegate:historytableController];
+	[bmlist_tableView setDelegate:saved_bmlistController];
 	
-	[array_bmlist release];
-	[array_histlist release];
+	historytableController.view = historytableController.tableView;
+	saved_bmlistController.view = saved_bmlistController.tableView;
+
 }
 
 
@@ -180,34 +189,13 @@
 	show_hobby_label.text = [NSString stringWithFormat:@"%@", [edit_hobby_text text]];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView
-numberOfRowsInSection:(NSInteger)section
-{
-	return [self.saved_bmlist count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView
-cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
-	if (cell == nil) {
-		cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier] autorelease];
-	}
-	
-	NSUInteger row = [indexPath row];
-	cell.textLabel.text = [saved_bmlist objectAtIndex:row];
-	return cell;
-}
-
 
 - (void)dealloc {
 	[id_log_text release];
 	[pw_log_text release];
-	[String release];
 	
-	[saved_bmlist dealloc];
-	[historylist dealloc];
+	[saved_bmlistController release];
+	[historytableController release];
 
     [super dealloc];
 }

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Saved_bmlistViewController.h"
+#import "HistoryTableViewController.h"
 
 @interface EnglishTrainerViewController : UIViewController {
 	
@@ -67,14 +69,14 @@
 	
 	//IB for Bookmark List
 	//**** don't know how to show data from database
+	Saved_bmlistViewController *saved_bmlistController;
 	IBOutlet UITableView *bmlist_tableView;
-	NSArray *saved_bmlist;
 	IBOutlet UIButton *bmlist_back_button;
 	
 	//IB for History
 	//**** don't know how to show data from database
+	HistoryTableViewController *historytableController;
 	IBOutlet UITableView *history_tableView;
-	NSArray *historylist;
 	IBOutlet UIButton *history_back_button;
 	
 	//IB for Help
@@ -116,8 +118,6 @@
 //below are how to get and post data from and to UI
 - (IBAction)profile_view;
 
-@property (nonatomic, retain) NSArray *saved_bmlist;
-@property (nonatomic, retain) NSArray *historylist;
 
 - (IBAction)get_logindata;
 - (IBAction)get_regdata;
