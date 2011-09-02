@@ -15,8 +15,24 @@
 		2899E5220DE3E06400AC0155 /* EnglishTrainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* EnglishTrainerViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* EnglishTrainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* EnglishTrainerViewController.m */; };
-		BD6CEF791410A3DD00BACEFF /* Saved_bmlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6CEF781410A3DD00BACEFF /* Saved_bmlistViewController.m */; };
-		BD6CEFEA1410B2CD00BACEFF /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6CEFE91410B2CD00BACEFF /* HistoryTableViewController.m */; };
+		D683530F1410EC7300A3B0C6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683530D1410EC7300A3B0C6 /* LoginViewController.m */; };
+		D68353101410EC7300A3B0C6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D683530E1410EC7300A3B0C6 /* LoginViewController.xib */; };
+		D68353141410EC8100A3B0C6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68353121410EC8100A3B0C6 /* RegisterViewController.m */; };
+		D68353151410EC8100A3B0C6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68353131410EC8100A3B0C6 /* RegisterViewController.xib */; };
+		D68353191410EC9600A3B0C6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68353171410EC9600A3B0C6 /* SearchViewController.m */; };
+		D683531A1410EC9600A3B0C6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68353181410EC9600A3B0C6 /* SearchViewController.xib */; };
+		D683531E1410ECAA00A3B0C6 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683531C1410ECAA00A3B0C6 /* BookmarkViewController.m */; };
+		D683531F1410ECAA00A3B0C6 /* BookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D683531D1410ECAA00A3B0C6 /* BookmarkViewController.xib */; };
+		D68353231410ECBC00A3B0C6 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68353211410ECBC00A3B0C6 /* HistoryViewController.m */; };
+		D68353241410ECBC00A3B0C6 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68353221410ECBC00A3B0C6 /* HistoryViewController.xib */; };
+		D68353281410ECCE00A3B0C6 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68353261410ECCE00A3B0C6 /* HelpViewController.m */; };
+		D68353291410ECCE00A3B0C6 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68353271410ECCE00A3B0C6 /* HelpViewController.xib */; };
+		D683532D1410ED1500A3B0C6 /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683532B1410ED1500A3B0C6 /* ProfileEditViewController.m */; };
+		D683532E1410ED1500A3B0C6 /* ProfileEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D683532C1410ED1500A3B0C6 /* ProfileEditViewController.xib */; };
+		D68353321410ED3B00A3B0C6 /* SentenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68353301410ED3B00A3B0C6 /* SentenceViewController.m */; };
+		D68353331410ED3B00A3B0C6 /* SentenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68353311410ED3B00A3B0C6 /* SentenceViewController.xib */; };
+		D683533E1410ED8D00A3B0C6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683533C1410ED8D00A3B0C6 /* ProfileViewController.m */; };
+		D683533F1410ED8D00A3B0C6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D683533D1410ED8D00A3B0C6 /* ProfileViewController.xib */; };
 		D6F8EB411410D71C009519B7 /* CouchCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8EB401410D71C009519B7 /* CouchCocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +50,33 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* EnglishTrainer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnglishTrainer_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EnglishTrainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EnglishTrainer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		BD6CEF771410A3DD00BACEFF /* Saved_bmlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Saved_bmlistViewController.h; sourceTree = "<group>"; };
-		BD6CEF781410A3DD00BACEFF /* Saved_bmlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Saved_bmlistViewController.m; sourceTree = "<group>"; };
-		BD6CEFE81410B2CD00BACEFF /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
-		BD6CEFE91410B2CD00BACEFF /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		D683530C1410EC7300A3B0C6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D683530D1410EC7300A3B0C6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D683530E1410EC7300A3B0C6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Classes/LoginViewController.xib; sourceTree = "<group>"; };
+		D68353111410EC8100A3B0C6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		D68353121410EC8100A3B0C6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		D68353131410EC8100A3B0C6 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = Classes/RegisterViewController.xib; sourceTree = "<group>"; };
+		D68353161410EC9600A3B0C6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		D68353171410EC9600A3B0C6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		D68353181410EC9600A3B0C6 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SearchViewController.xib; path = Classes/SearchViewController.xib; sourceTree = "<group>"; };
+		D683531B1410ECAA00A3B0C6 /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
+		D683531C1410ECAA00A3B0C6 /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		D683531D1410ECAA00A3B0C6 /* BookmarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BookmarkViewController.xib; path = Classes/BookmarkViewController.xib; sourceTree = "<group>"; };
+		D68353201410ECBC00A3B0C6 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		D68353211410ECBC00A3B0C6 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		D68353221410ECBC00A3B0C6 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HistoryViewController.xib; path = Classes/HistoryViewController.xib; sourceTree = "<group>"; };
+		D68353251410ECCE00A3B0C6 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		D68353261410ECCE00A3B0C6 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		D68353271410ECCE00A3B0C6 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpViewController.xib; path = Classes/HelpViewController.xib; sourceTree = "<group>"; };
+		D683532A1410ED1500A3B0C6 /* ProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileEditViewController.h; sourceTree = "<group>"; };
+		D683532B1410ED1500A3B0C6 /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileEditViewController.m; sourceTree = "<group>"; };
+		D683532C1410ED1500A3B0C6 /* ProfileEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileEditViewController.xib; path = Classes/ProfileEditViewController.xib; sourceTree = "<group>"; };
+		D683532F1410ED3B00A3B0C6 /* SentenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentenceViewController.h; sourceTree = "<group>"; };
+		D68353301410ED3B00A3B0C6 /* SentenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SentenceViewController.m; sourceTree = "<group>"; };
+		D68353311410ED3B00A3B0C6 /* SentenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SentenceViewController.xib; path = Classes/SentenceViewController.xib; sourceTree = "<group>"; };
+		D683533B1410ED8D00A3B0C6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D683533C1410ED8D00A3B0C6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D683533D1410ED8D00A3B0C6 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = Classes/ProfileViewController.xib; sourceTree = "<group>"; };
 		D6F8EB401410D71C009519B7 /* CouchCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,10 +102,24 @@
 				1D3623250D0F684500981E51 /* EnglishTrainerAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* EnglishTrainerViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* EnglishTrainerViewController.m */,
-				BD6CEF771410A3DD00BACEFF /* Saved_bmlistViewController.h */,
-				BD6CEF781410A3DD00BACEFF /* Saved_bmlistViewController.m */,
-				BD6CEFE81410B2CD00BACEFF /* HistoryTableViewController.h */,
-				BD6CEFE91410B2CD00BACEFF /* HistoryTableViewController.m */,
+				D683530C1410EC7300A3B0C6 /* LoginViewController.h */,
+				D683530D1410EC7300A3B0C6 /* LoginViewController.m */,
+				D68353111410EC8100A3B0C6 /* RegisterViewController.h */,
+				D68353121410EC8100A3B0C6 /* RegisterViewController.m */,
+				D68353161410EC9600A3B0C6 /* SearchViewController.h */,
+				D68353171410EC9600A3B0C6 /* SearchViewController.m */,
+				D683531B1410ECAA00A3B0C6 /* BookmarkViewController.h */,
+				D683531C1410ECAA00A3B0C6 /* BookmarkViewController.m */,
+				D68353201410ECBC00A3B0C6 /* HistoryViewController.h */,
+				D68353211410ECBC00A3B0C6 /* HistoryViewController.m */,
+				D68353251410ECCE00A3B0C6 /* HelpViewController.h */,
+				D68353261410ECCE00A3B0C6 /* HelpViewController.m */,
+				D683532A1410ED1500A3B0C6 /* ProfileEditViewController.h */,
+				D683532B1410ED1500A3B0C6 /* ProfileEditViewController.m */,
+				D683532F1410ED3B00A3B0C6 /* SentenceViewController.h */,
+				D68353301410ED3B00A3B0C6 /* SentenceViewController.m */,
+				D683533B1410ED8D00A3B0C6 /* ProfileViewController.h */,
+				D683533C1410ED8D00A3B0C6 /* ProfileViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -96,6 +149,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* EnglishTrainer_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				D68353311410ED3B00A3B0C6 /* SentenceViewController.xib */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -103,6 +157,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D683530E1410EC7300A3B0C6 /* LoginViewController.xib */,
+				D68353131410EC8100A3B0C6 /* RegisterViewController.xib */,
+				D68353181410EC9600A3B0C6 /* SearchViewController.xib */,
+				D683531D1410ECAA00A3B0C6 /* BookmarkViewController.xib */,
+				D68353221410ECBC00A3B0C6 /* HistoryViewController.xib */,
+				D68353271410ECCE00A3B0C6 /* HelpViewController.xib */,
+				D683532C1410ED1500A3B0C6 /* ProfileEditViewController.xib */,
+				D683533D1410ED8D00A3B0C6 /* ProfileViewController.xib */,
 				2899E5210DE3E06400AC0155 /* EnglishTrainerViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* EnglishTrainer-Info.plist */,
@@ -172,6 +234,15 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* EnglishTrainerViewController.xib in Resources */,
+				D68353101410EC7300A3B0C6 /* LoginViewController.xib in Resources */,
+				D68353151410EC8100A3B0C6 /* RegisterViewController.xib in Resources */,
+				D683531A1410EC9600A3B0C6 /* SearchViewController.xib in Resources */,
+				D683531F1410ECAA00A3B0C6 /* BookmarkViewController.xib in Resources */,
+				D68353241410ECBC00A3B0C6 /* HistoryViewController.xib in Resources */,
+				D68353291410ECCE00A3B0C6 /* HelpViewController.xib in Resources */,
+				D683532E1410ED1500A3B0C6 /* ProfileEditViewController.xib in Resources */,
+				D68353331410ED3B00A3B0C6 /* SentenceViewController.xib in Resources */,
+				D683533F1410ED8D00A3B0C6 /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +256,15 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* EnglishTrainerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* EnglishTrainerViewController.m in Sources */,
-				BD6CEF791410A3DD00BACEFF /* Saved_bmlistViewController.m in Sources */,
-				BD6CEFEA1410B2CD00BACEFF /* HistoryTableViewController.m in Sources */,
+				D683530F1410EC7300A3B0C6 /* LoginViewController.m in Sources */,
+				D68353141410EC8100A3B0C6 /* RegisterViewController.m in Sources */,
+				D68353191410EC9600A3B0C6 /* SearchViewController.m in Sources */,
+				D683531E1410ECAA00A3B0C6 /* BookmarkViewController.m in Sources */,
+				D68353231410ECBC00A3B0C6 /* HistoryViewController.m in Sources */,
+				D68353281410ECCE00A3B0C6 /* HelpViewController.m in Sources */,
+				D683532D1410ED1500A3B0C6 /* ProfileEditViewController.m in Sources */,
+				D68353321410ED3B00A3B0C6 /* SentenceViewController.m in Sources */,
+				D683533E1410ED8D00A3B0C6 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
